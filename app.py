@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Initialize Google Maps client
-gmaps = googlemaps.Client(key='AIzaSyChnZ0SRYEPh-jMrS8AdqGJdNxUX-Nu6Do')
+#gmaps = googlemaps.Client(key='AIzaSyChnZ0SRYEPh-jMrS8AdqGJdNxUX-Nu6Do')     #remove hastag
 weather_api_key = 'f30b257a86c037d7047ee7b0fcbce704'
 
 # ACO Parameters
