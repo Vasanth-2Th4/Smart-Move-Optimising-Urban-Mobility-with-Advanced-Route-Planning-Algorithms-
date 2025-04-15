@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMove: Predicting Urban Mobility</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChnZ0SRYEPh-jMrS8AdqGJdNxUX-Nu6Do&libraries=places&callback=initializeAutocomplete&v=weekly" async defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>SmartMove: Predicting Urban Mobility</h1>
+        <form id="delivery-form">
+            <div class="input-group">
+                <label for="start-point">Start Point:</label>
+                <input type="text" id="start-point" name="start-point" required>
+            </div>
+            <div id="additional-points"></div>
+            <div class="input-group">
+                <label for="end-point">End Point:</label>
+                <input type="text" id="end-point" name="end-point" required>
+            </div>
+            <button type="button" id="add-point">Add Another Point</button>
+            <button type="submit">Generate Route</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
